@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="autocomplete_hints">
+        <item>girls</item>
+        <item>fitness</item>
+        <item>boys</item>
+        <item>nature</item>
+        <item>sexy</item>
+        <item>watermelon</item>
+        <item>quran</item>
+        <item>lion</item>
+        <item>mountains</item>
+        <item>hackers</item>
+        <item>laptop</item>
+        <item>water</item>
+        <item>iphone</item>
+        <item>cars</item>
+        <item>earth</item>
+        <item>planes</item>
+        <item>pyramids</item>
+        <item>moon</item>
+        <item>love</item>
+        <item>romantic</item>
+        <item>horror</item>
+    </string-array>
+</resources>

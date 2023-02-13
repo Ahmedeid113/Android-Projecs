@@ -8,6 +8,7 @@
     android:background="#020B3A"
     tools:context=".view.activities.SplashActivity">
     <ProgressBar
+        android:id="@+id/progress_circular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:theme="@style/progress_style"

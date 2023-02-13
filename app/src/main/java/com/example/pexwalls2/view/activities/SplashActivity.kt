@@ -6,9 +6,11 @@ import android.net.NetworkCapabilities
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import android.view.Window
 import android.widget.Toast
 import com.example.pexwalls2.databinding.ActivitySplashBinding
+import com.example.pexwalls2.view.fragments.DialogFRagment
 import kotlinx.coroutines.*
 
 class SplashActivity : AppCompatActivity() {
@@ -29,9 +31,10 @@ class SplashActivity : AppCompatActivity() {
                 startActivity(Intent(this@SplashActivity, MainActivity::class.java))
                 finish()
             } else {
-                Toast.makeText(this@SplashActivity, "No Internet Connection", Toast.LENGTH_LONG)
-                    .show()
-                finish()
+                binding.progressCircular.visibility = View.GONE
+                val dialog = DialogFRagment.getInstance()
+                dialog.isCancelable = false
+                dialog.show(supportFragmentManager, null)
             }
 
         }
